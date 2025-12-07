@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation'
 
 function InterviewLink({ interviewId, formData }) {
   const router = useRouter()
-  const host = process.env.NEXT_PUBLIC_HOST_URL?.replace(/\/$/, '') || 'http://localhost:3000'
+  const host = process.env.NEXT_PUBLIC_HOST_URL?.replace(/\/$/, '')
   const url = `${host}/${interviewId}`
 
   const onCopyLink = async () => {

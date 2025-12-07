@@ -6,7 +6,7 @@ import { toast } from 'sonner';
 import Link from 'next/link';
 
 function InterviewCard({ interview, viewDetail = false }) {
-  const host = process.env.NEXT_PUBLIC_HOST_URL || 'http://localhost:3000';
+  const host = process.env.NEXT_PUBLIC_HOST_URL;
   const interviewUrl = `${host}/${interview?.interview_id}`;
 
   const copylink = async () => {
